@@ -92,11 +92,11 @@ I keep a `config.json` snippet handy for fresh installs:
   "connections": 16,
   "storageDir": "~/Downloads/gopeed",
   "theme": "dark",
-  "maxRunning": 3
+  "maxRunning": 5
 }
 ```
 
-> **Note:** I set `maxRunning` to 3 to avoid saturating my connection when multiple downloads are queued at once.
+> **Note:** I bumped `maxRunning` to 5 — 3 felt too conservative on my gigabit connection and I rarely saturate it even with several concurrent downloads.
 
 ## Contributing
 
