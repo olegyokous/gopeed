@@ -62,6 +62,9 @@ Launch the application and use the intuitive UI to manage your downloads.
 
 # Start with custom download directory
 ./gopeed --storage-dir /path/to/downloads
+
+# Start with increased connection limit per download (I use 16 for faster speeds on my home network)
+./gopeed --connections 16
 ```
 
 ### Docker
