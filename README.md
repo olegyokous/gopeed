@@ -92,11 +92,12 @@ I keep a `config.json` snippet handy for fresh installs:
   "connections": 16,
   "storageDir": "~/Downloads/gopeed",
   "theme": "dark",
-  "maxRunning": 5
+  "maxRunning": 5,
+  "retryTimes": 3
 }
 ```
 
-> **Note:** I bumped `maxRunning` to 5 — 3 felt too conservative on my gigabit connection and I rarely saturate it even with several concurrent downloads.
+> **Note:** I bumped `maxRunning` to 5 — 3 felt too conservative on my gigabit connection and I rarely saturate it even with several concurrent downloads. Added `retryTimes: 3` so failed downloads automatically retry instead of just stopping.
 
 ## Contributing
 
