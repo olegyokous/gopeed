@@ -83,6 +83,18 @@ Configuration file is located at:
 - **Windows**: `%APPDATA%\gopeed\config.json`
 - **macOS/Linux**: `~/.config/gopeed/config.json`
 
+### My personal config defaults
+
+I keep a `config.json` snippet handy for fresh installs:
+
+```json
+{
+  "connections": 16,
+  "storageDir": "~/Downloads/gopeed",
+  "theme": "dark"
+}
+```
+
 ## Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
