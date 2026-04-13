@@ -93,11 +93,12 @@ I keep a `config.json` snippet handy for fresh installs:
   "storageDir": "~/Downloads/gopeed",
   "theme": "dark",
   "maxRunning": 5,
-  "retryTimes": 3
+  "retryTimes": 3,
+  "retryInterval": 10
 }
 ```
 
-> **Note:** I bumped `maxRunning` to 5 — 3 felt too conservative on my gigabit connection and I rarely saturate it even with several concurrent downloads. Added `retryTimes: 3` so failed downloads automatically retry instead of just stopping.
+> **Note:** I bumped `maxRunning` to 5 — 3 felt too conservative on my gigabit connection and I rarely saturate it even with several concurrent downloads. Added `retryTimes: 3` so failed downloads automatically retry instead of just stopping. Set `retryInterval: 10` (seconds) to add a small delay between retries rather than hammering the server immediately.
 
 ## Contributing
 
@@ -115,5 +116,4 @@ This project is licensed under the [GPL-3.0 License](LICENSE).
 
 ## Acknowledgements
 
-- [GopeedLab/gopeed](https://github.com/GopeedLab/gopeed) — Original project
-- All contributors and supporters
+- [GopeedLab/gopeed](https://gi
