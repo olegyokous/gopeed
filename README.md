@@ -91,9 +91,12 @@ I keep a `config.json` snippet handy for fresh installs:
 {
   "connections": 16,
   "storageDir": "~/Downloads/gopeed",
-  "theme": "dark"
+  "theme": "dark",
+  "maxRunning": 3
 }
 ```
+
+> **Note:** I set `maxRunning` to 3 to avoid saturating my connection when multiple downloads are queued at once.
 
 ## Contributing
 
