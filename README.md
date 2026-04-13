@@ -95,18 +95,16 @@ I keep a `config.json` snippet handy for fresh installs:
   "maxRunning": 5,
   "retryTimes": 3,
   "retryInterval": 10,
-  "speedLimit": 0
+  "speedLimit": 0,
+  "proxy": ""
 }
 ```
 
-> **Note:** I bumped `maxRunning` to 5 — 3 felt too conservative on my gigabit connection and I rarely saturate it even with several concurrent downloads. Added `retryTimes: 3` so failed downloads automatically retry instead of just stopping. Set `retryInterval: 10` (seconds) to add a small delay between retries rather than hammering the server immediately. `speedLimit: 0` means unlimited — I leave this here as a reminder that it can be set in bytes/s if I ever need to throttle (e.g. `10485760` = 10 MB/s).
+> **Note:** I bumped `maxRunning` to 5 — 3 felt too conservative on my gigabit connection and I rarely saturate it even with several concurrent downloads. Added `retryTimes: 3` so failed downloads automatically retry instead of just stopping. Set `retryInterval: 10` (seconds) to add a small delay between retries rather than hammering the server immediately. `speedLimit: 0` means unlimited — I leave this here as a reminder that it can be set in bytes/s if I ever need to throttle (e.g. `10485760` = 10 MB/s). Added `proxy: ""` as a reminder that a SOCKS5/HTTP proxy can be set here (e.g. `"socks5://127.0.0.1:1080"`) — useful when I'm on a restricted network.
 
 ## Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feat/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feat/amazing-feature`)
-5. Open a Pull Request
+2. Create your feature branch (`git checkout
