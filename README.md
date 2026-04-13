@@ -57,8 +57,8 @@ Launch the application and use the intuitive UI to manage your downloads.
 # Start the server
 ./gopeed
 
-# Start with custom port
-./gopeed --port 9999
+# Start with custom port (I use 8080 locally to avoid conflicts with other services)
+./gopeed --port 8080
 
 # Start with custom download directory
 ./gopeed --storage-dir /path/to/downloads
