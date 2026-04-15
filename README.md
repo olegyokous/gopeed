@@ -101,6 +101,4 @@ I keep a `config.json` snippet handy for fresh installs:
 }
 ```
 
-> **Note:** I bumped `maxRunning` to 5 — 3 felt too conservative on my gigabit connection and I rarely saturate it even with several concurrent downloads. Added `retryTimes: 3` so failed downloads automatically retry instead of just stopping. Set `retryInterval: 10` (seconds) to add a small delay between retries rather than hammering the server immediately. `speedLimit: 0` means unlimited — I leave this here as a reminder that it can be set in bytes/s if I ever need to throttle (e.g. `10485760` = 10 MB/s). Added `proxy: ""` as a reminder that a SOCKS5/HTTP proxy can be set here (e.g. `"socks5://127.0.0.1:1080"`) — useful when I'm on a restricted network. Added `language: "en-US"` explicitly so the UI doesn't unexpectedly switch languages if system locale changes.
-
-## Contri
+> **Note:** I bumped `maxRunning` to 5 — 3 felt too conservative on my gigabit connection and I rarely saturate it even with several concurrent downloads. Added `retryTimes: 3` so failed downloads automatically retry instead of just stopping. Set `retryInterval: 10` (seconds) to add a small delay between retries rather than hammering the server immediately. `speedLimit: 0` means unlimited — I leave this here as a reminder that it can be set in bytes/s if I ever need to throttle (e.g. `10485760` = 10 MB/s). Added `proxy: ""` as a reminder that a SOCKS5/HTTP proxy can be set here (e.g. `"socks5://127.0.0.1:1080"`) — useful when I'm on a restricted network.
